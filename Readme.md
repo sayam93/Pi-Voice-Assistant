@@ -519,18 +519,34 @@ sudo chmod -R 777 done.wav stt-stop.wav
 ```
 93. Make scripts executable for to allow access by the Wyoming Satellite service.
 ```
-sudo chmod -R 777 /home/username/wyoming-enhancements/snapcast/scripts/done.sh
+sudo chmod -R 777 /home/username/wyoming-enhancements/snapcast/scripts/awake.sh
 ```
 ```
 sudo chmod -R 777 /home/username/wyoming-enhancements/snapcast/scripts/stt-stop.sh
 ```
 ```
-sudo chmod -R 777 /home/username/wyoming-enhancements/snapcast/scripts/awake.sh
+sudo chmod -R 777 /home/username/wyoming-enhancements/snapcast/scripts/done.sh
 ```
 ```
 sudo chmod -R 777 /home/username/wyoming-satellite/script/run
 ```
-94. Enable all the created services.
+94. Edit the done.sh script to point to the correct custom sound directory
+```
+sudo nano /home/username/wyoming-enhancements/snapcast/scripts/done.sh
+```
+95. Replace 'pi' in the below line with the actual username used during Raspberry Pi OS Installation.
+```
+paplay --property=media.role=notification /home/pi/custom-sounds/done.wav 
+```
+96. Edit the stt-stop.sh script to point to the correct custom sound directory
+```
+sudo nano /home/username/wyoming-enhancements/snapcast/scripts/stt-stop.sh
+```
+97. Replace 'pi' in the last line with the actual username used during Raspberry Pi OS Installation.
+```
+paplay --property=media.role=notification /home/pi/custom-sounds/stt-stop.wav
+```
+98. Enable all the created services.
 ```
 sudo systemctl enable --now wyoming-openwakeword.service
 ```
@@ -549,11 +565,11 @@ sudo systemctl enable --now vlc-tts.service
 ```
 sudo systemctl enable --now snapclient.service
 ```
-95. Reload the Systemd daemon.
+99. Reload the Systemd daemon.
 ```
 sudo systemctl daemon-reload
 ```
-96. Check the status of all the newly created services.
+100. Check the status of all the newly created services.
 ```
 sudo systemctl status wyoming-satellite.service wyoming-openwakeword.service 2mic_leds.service pulseaudio.service snapclient.service vlc-tts.service bluetooth.service
 ```

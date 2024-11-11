@@ -245,7 +245,7 @@ sudo nano /etc/pulse/client.conf
 40. Press the Y key when prompted to save changes and then Press Enter to save and exit.
 41. Give non root bluetooth privileges.
 ```
-sudo usermod -G bluetooth -a username
+sudo usermod -G bluetooth -a pulse username
 ```
 42. Edit the /lib/systemd/system/bluetooth.service file.
 ```

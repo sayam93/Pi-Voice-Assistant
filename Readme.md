@@ -441,7 +441,7 @@ ExecStart=/home/username/wyoming-satellite/script/run \
     --wake-word-name 'wakewordnamehere' \
     --event-uri 'tcp://127.0.0.1:10500' \
     --detection-command '/home/username/wyoming-enhancements/snapcast/scripts/awake.sh' \
-    --tts-stop-command '/home/username/wyoming-enhancements/snapcast/scripts/done.sh' \
+    --tts-played-command '/home/username/wyoming-enhancements/snapcast/scripts/done.sh' \
     --error-command '/home/username/wyoming-enhancements/snapcast/scripts/done.sh' \
     --awake-wav sounds/awake.wav \
     --done-wav sounds/done.wav \

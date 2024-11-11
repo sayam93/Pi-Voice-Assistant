@@ -449,7 +449,7 @@ ExecStart=/home/username/wyoming-satellite/script/run \
     --awake-wav sounds/awake.wav \
     --done-wav sounds/done.wav \
     --timer-finished-wav sounds/timer_finished.wav \
-    --timer-finished-wav-repeat 3 1
+    --timer-finished-wav-repeat 3 2
 WorkingDirectory=/home/username/wyoming-satellite
 Restart=always
 RestartSec=1

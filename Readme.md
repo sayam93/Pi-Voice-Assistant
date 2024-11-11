@@ -63,6 +63,7 @@ sudo apt-get install --no-install-recommends  \
   bluez-tools \
   pulseaudio-module-bluetooth \
   pulseaudio-utils \
+  espeak \
   vlc
 ```
 6. Clone the Wyoming Satellite Github repo to the Pi.
@@ -443,6 +444,8 @@ ExecStart=/home/username/wyoming-satellite/script/run \
     --detection-command '/home/username/wyoming-enhancements/snapcast/scripts/awake.sh' \
     --tts-played-command '/home/username/wyoming-enhancements/snapcast/scripts/done.sh' \
     --error-command '/home/username/wyoming-enhancements/snapcast/scripts/done.sh' \
+    --connected-command 'espeak connected' \
+    --disconnected-command 'espeak disconnected' \
     --awake-wav sounds/awake.wav \
     --done-wav sounds/done.wav \
     --timer-finished-wav sounds/timer_finished.wav \

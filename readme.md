@@ -563,7 +563,7 @@ sudo nano /home/username/wyoming-enhancements/done.sh
 ```
 paplay --property=media.role=notification /home/username/wyoming-satellite/sounds/done.wav 
 ```
-95. Edit the done.sh script to point to the correct custom sound directory
+95. Edit the detected.sh script to point to the correct custom sound directory
 ```
 sudo nano /home/username/wyoming-enhancements/detected.sh
 ```
@@ -581,7 +581,7 @@ sudo nano /home/username/wyoming-enhancements/transcript.sh
 ```
 sudo nano /home/username/wyoming-enhancements/synthesize.sh
 ```
-98. Edit the monitor_done.sh script to point to the correct custom sound directory
+98. Edit the done.sh script to point to the correct custom sound directory
 ```
 sudo nano /home/username/wyoming-enhancements/done.sh
 ```
@@ -597,7 +597,7 @@ sudo nano /home/username/wyoming-enhancements/detected.py
 sudo nano /home/username/wyoming-enhancements/status_connect.py
 ```
 ```
-sudo nano /home/username/wyoming-enhancements/status_disonnect.py
+sudo nano /home/username/wyoming-enhancements/status_disconnect.py
 ```
 ```
 sudo nano /home/username/wyoming-enhancements/mute_button.py

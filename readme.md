@@ -143,7 +143,7 @@ sudo chmod -R 777 /home/username/wyoming-openwakeword/custom
 sudo chmod -R 777 /home/username/wyoming-openwakeword/wyoming_openwakeword/models/
 ```
 ### Replace username in the file paths with the actual username used during Raspberry Pi OS Installation
-21. Upload the custom wakeword from Mac / PC (Replace the username and hostname in all the commands with the actual username and hostname used during Raspberry Pi OS Installation).
+21. (Skip step 21 and 22 if using a standard wakeword) Upload the custom wakeword from Mac / PC (Replace the username and hostname in all the commands with the actual username and hostname used during Raspberry Pi OS Installation).
 ```
 scp /path/to/wakeword/wakeword.tflite username@hostname.local:/home/username/wyoming-openwakeword/custom/wakeword.tflite
 ```
@@ -182,7 +182,7 @@ RestartSec=1
 [Install]
 WantedBy=default.target
 ```
-### Replace the wakewordnamehere phrase in the preload-model section with the custom wakeword name or use the standard ones such as 'ok_nabu', 'hey_jarvis' or 'hey_mycroft' (Skip step 21 and 22 if using a standard wakeword).
+### Replace the wakewordnamehere phrase in the preload-model section with the custom wakeword name or use the standard ones such as 'ok_nabu', 'hey_jarvis' or 'hey_mycroft'.
 25. Press the Control and X keys on your keyboard.
 26. Press the Y key when prompted to save changes and then Press Enter to save and exit.
 27. Reboot the Pi.

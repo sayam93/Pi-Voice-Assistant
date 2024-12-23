@@ -509,7 +509,7 @@ RestartSec=1
 [Install]
 WantedBy=default.target
 ```
-### Replace Satellite name in the name section and the wakeword name in preload model section with your custom wakeword name or use the standard ones such as 'ok_nabu', 'hey_jarvis' or 'hey_mycroft' (Skip step 18 and 19 if using a standard wakeword). The wakeword name should be the same as the one used while creating the OpenWakeWord service
+### Replace Satellite name in the name section and the wakeword name in preload model section with your custom wakeword name or use the standard ones such as 'ok_nabu', 'hey_jarvis' or 'hey_mycroft' (Skip step 19-22 if using a standard wakeword). The wakeword name should be the same as the one used while creating the OpenWakeWord service
 
 88. Press the Control and X keys on your keyboard.
 89. Press the Y key when prompted to save changes and then Press Enter to save and exit.

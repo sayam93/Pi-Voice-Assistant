@@ -571,7 +571,7 @@ sudo nano /home/username/wyoming-enhancements/detected.sh
 ```
 /home/username/wyoming-satellite/examples/.venv/bin/python3 /home/username/wyoming-satellite/examples/detected.py
 ```
-97. Edit each of the error.sh, transcript.sh and synthesize.sh scripts to update Home Assistant details. (replace username in the commands with the actual username used during Raspberry Pi OS Installation).
+97. Edit each of the error.sh, transcript.sh and synthesize.sh scripts to update Home Assistant details. (replace username in the commands with the actual username used during Raspberry Pi OS Installation). Don't forget to insert a Long Lived Access Token to prevent error messages in HA. (https://developers.home-assistant.io/docs/auth_api/#long-lived-access-token) To create one in HomeAssistant, click on your username in the bottom left and then "Security" at the top.)
 ```
 sudo nano /home/username/wyoming-enhancements/error.sh
 ```
